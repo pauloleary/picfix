@@ -1,4 +1,5 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  
   <modelVersion>4.0.0</modelVersion>
   <groupId>pol</groupId>
   <artifactId>picfix</artifactId>
@@ -6,46 +7,16 @@
   <name>picifix</name>
   <description>Tools for organizing photos / video library</description>
 
-<dependencies>
+  <dependencies>
         <dependency>
 		  	<groupId>junit</groupId>
 		  	<artifactId>junit</artifactId>
 		  	<version>4.12</version>
-		</dependency>
-		
-</dependencies>
-    <build>
-        <resources>
-            <resource>
-                <directory>resource</directory>
-                <targetPath>${basedir}/classes</targetPath>
-            </resource>
-            <resource>
-      			<directory>src/main/resources</directory>
-      			<targetPath>${basedir}/classes</targetPath>
-      			
-    		</resource>
-        </resources>
-        <defaultGoal>test</defaultGoal>
-        <sourceDirectory>${project.basedir}</sourceDirectory>
-        <outputDirectory>${project.basedir}/classes</outputDirectory>
-        <plugins>
-          <plugin>
-			    <groupId>org.apache.maven.plugins</groupId>
-			    <artifactId>maven-surefire-plugin</artifactId>
-			    <version>2.19.1</version>
-			    <dependencies>
-			      <dependency>
-			        <groupId>org.apache.maven.surefire</groupId>
-			        <artifactId>surefire-junit4</artifactId>
-			        <version>2.6</version>
-			      </dependency>
-			    </dependencies>
-		  </plugin>  
-		    
-        </plugins>
-    </build>
-<packaging>jar</packaging>
+		</dependency>	
+  </dependencies>
+
+  <packaging>jar</packaging>
+
 </project>
 
 
